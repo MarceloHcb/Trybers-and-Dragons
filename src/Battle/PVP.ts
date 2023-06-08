@@ -1,4 +1,3 @@
-import Character from '../Character';
 import Fighter from '../Fighter';
 import Battle from './Battle';
 
@@ -22,4 +21,4 @@ export default class PVP extends Battle {
   }
 }
 
-console.log(new PVP(new Character('p1'), new Character('p2')).fight());
+// console.log(new PVP(new Character('p1'), new Character('p2')).fight());
