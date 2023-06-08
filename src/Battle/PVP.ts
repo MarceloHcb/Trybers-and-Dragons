@@ -25,8 +25,8 @@ export default class PVP extends Battle {
     }
   
     while (player1.lifePoints !== -1 && enemyPlayer.lifePoints !== -1) {
-      player1.attack(player1);
-      enemyPlayer.attack(enemyPlayer);
+      player1.attack(enemyPlayer);
+      enemyPlayer.attack(player1);
     }
   
     return super.fight();

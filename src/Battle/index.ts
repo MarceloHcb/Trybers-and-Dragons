@@ -3,5 +3,5 @@ import PVP from './PVP';
 
 export default Battle;
 export {
-  PVP,
+  PVP,  
 };
