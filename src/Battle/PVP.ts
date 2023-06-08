@@ -14,21 +14,10 @@ export default class PVP extends Battle {
     const player1 = this.player;
     const enemyPlayer = this._player2;
   
-    player1.attack(enemyPlayer);
-    if (enemyPlayer.lifePoints <= 0) {
-      return 1;
-    }
-  
-    enemyPlayer.attack(player1);
-    if (player1.lifePoints <= 0) {
-      return -1;
-    }
-  
     while (player1.lifePoints !== -1 && enemyPlayer.lifePoints !== -1) {
       player1.attack(enemyPlayer);
       enemyPlayer.attack(player1);
     }
-  
     return super.fight();
   }
 }

@@ -32,10 +32,10 @@ export default class Character implements Fighter {
     enemy.receiveDamage(this._strength); 
   }
 
-  special(enemy: Fighter): void {
+  special(enemy: Fighter | SimpleFighter): void {
     const updatedEnemy = { ...enemy }; 
-    if (updatedEnemy.defense > this._defense) {
-      updatedEnemy.defense = this._defense;
+    if (updatedEnemy.lifePoints > this._defense) {
+      updatedEnemy.lifePoints = this._defense;
     }
   }
 
